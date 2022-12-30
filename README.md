@@ -19,3 +19,23 @@ Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and 
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
+
+## Create monorepo with angular preset
+
+npx create-nx-workspace@latest --preset angular-monorepo
+
+cd <workspace name>
+npm i -D @nrwl/nest@latest
+npx nx g @nrwl/nest:application
+
+## SSR universal with @nxarch
+
+npm i @nxarch/ng-nest
+yarn add @nxarch/ng-nest
+
+yarn nx generate @nxarch/ng-nest:init --ssrApp=my-angular-project --serverApp=my-nestjs-project
+
+## Tutorial
+
+https://dev.to/yannickboetzkes/fullstack-js-with-angular-universal-and-nestjs-nx-flavor-46k5
+
